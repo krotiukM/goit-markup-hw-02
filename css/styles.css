@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+}
+
+.Main_bigest_section {
+  background-color: #2f303a;
+}
+
+.Main_h1 {
+  font-size: 44px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.middle_section {
+  background-color: #e5e5e5;
+}
+
+.our_team_section {
+  background-color: #f5f4fa;
+}
+
+.footer_section {
+  background-color: #2f303a;
+}
