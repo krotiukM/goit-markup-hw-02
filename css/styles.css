@@ -1,7 +1,7 @@
 :root {
   --main-title-color: #ffffff;
   --second-title-color: #212121;
-  ---main-text-color: #757575;
+  --main-text-color: #757575;
   --accent-color: #2196f3;
   --btn-color: #ffffff;
   --header-tel-color: #757575;
@@ -50,7 +50,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(---main-text-color);
+  color: var(--main-text-color);
 }
 
 .header-btn {
@@ -95,7 +95,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(---main-text-color);
+  color: var(--main-text-color);
 }
 
 .title-about {
@@ -126,7 +126,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(---main-text-color);
+  color: var(--main-text-color);
 }
 
 /*------------------------footer---------------------------*/
