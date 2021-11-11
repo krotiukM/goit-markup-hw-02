@@ -36,7 +36,9 @@ body {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-
+.logo-studio {
+  color: #212121;
+}
 .header-item {
   font-weight: 500;
   font-size: 14px;
@@ -50,10 +52,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: #757575;
 }
 
 .header-btn {
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -126,7 +129,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: #212121;
 }
 
 /*------------------------footer---------------------------*/
@@ -162,6 +165,9 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-logo-studio {
+  color: white;
+}
 .footer-address:hover,
 .footer-navigation:hover,
 .footer-address:focus,
