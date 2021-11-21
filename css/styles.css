@@ -4,6 +4,7 @@
   --main-text-color: #757575;
   --accent-color: #2196f3;
   --btn-color: #ffffff;
+  --btn-port-color: #f5f4fa;
   --header-tel-color: #757575;
   --header-text-color: #212121;
 }
@@ -20,6 +21,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -32,12 +34,6 @@ img {
   margin: 0 auto;
 }
 
-button {
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 6px 22px 6px 22px;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #e5e5e5;
@@ -47,6 +43,7 @@ body {
 
 .header {
   color: white;
+  border: 1px solid #ececec;
 }
 
 .list {
@@ -65,13 +62,14 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  padding: 24px 0 25px 215px;
+  padding: 24px 0 25px 0;
   margin: 0 93px 0 0;
 }
 
 .logo-studio {
   color: #212121;
 }
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -131,6 +129,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.about_section {
+  padding-bottom: 94px;
+}
 
 .main_h1 {
   font-weight: 900;
@@ -155,10 +156,13 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+
   color: var(--btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
+  padding: 6px 22px 6px 22px;
   display: block;
+
   background: #2196f3;
   cursor: pointer;
   border-radius: 4px;
@@ -191,14 +195,15 @@ body {
   width: 270px;
 }
 
-.title-about {
+.title-about,
+.title-about-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
-  margin-top: 94px;
+  /*margin-top: 94px;*/
   margin-bottom: 50px;
 }
 
@@ -206,9 +211,12 @@ body {
   display: flex;
 }
 
+.middle-item,
 .about-item {
   margin-right: 30px;
 }
+
+.middle-item:last-child,
 .about-item:last-child {
   margin-right: 0;
 }
@@ -217,10 +225,6 @@ body {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.title-about {
-  margin-bottom: 50px;
 }
 
 .our_team_section-title {
@@ -262,6 +266,8 @@ body {
 /*--------------------footer-----------------------*/
 .footer_section {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -295,11 +301,16 @@ body {
 .footer-logo-studio {
   color: white;
 }
+
 .footer-address:hover,
 .footer-navigation:hover,
 .footer-address:focus,
 .footer-navigation:focus {
   color: var(--accent-color);
+}
+
+.contacts-list {
+  margin-top: 20px;
 }
 
 /*------------------------portfolio---------------------------*/
@@ -308,20 +319,21 @@ body {
   padding-bottom: 50px;
 }
 
-.portfolio_section {
-  padding-bottom: 94px;
-}
-
 .portfolio_list {
   display: flex;
   margin: 0 auto;
 }
 
+.portfolio_list .btn + .btn {
+  margin-left: 8px;
+}
+
 .portfolio_section-title {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin-right: -30px;
   margin-bottom: -30px;
+  padding-top: 50px;
 }
 /*justify-content: space-between;*/
 
@@ -330,6 +342,7 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .port_item_h {
@@ -346,6 +359,7 @@ body {
   color: #212121;
   margin-bottom: 4px;
 }
+
 .after-title-portfolio {
   font-family: Roboto;
   font-style: normal;
@@ -355,59 +369,63 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.portfolio-btn-all {
+
+.button {
+  color: #212121;
+  background-color: var(--btn-port-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
   position: absolute;
-  width: 73px;
+}
+
+.primary {
   height: 38px;
+  width: 73px;
   left: 495px;
   top: 174px;
-  background: #2196f3;
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.portfolio-btn-beb {
-  position: absolute;
-  width: 128px;
+.secondary {
   height: 38px;
+  width: 128px;
   left: 576px;
   top: 174px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.portfolio-btn-add {
-  position: absolute;
+.add {
   width: 145px;
   height: 38px;
   left: 712px;
   top: 174px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.portfolio-btn-Disa {
-  position: absolute;
+.disa {
   width: 103px;
   height: 38px;
   left: 865px;
   top: 174px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.portfolio-btn-Markt {
-  position: absolute;
+.markt {
   width: 130px;
   height: 38px;
   left: 976px;
   top: 174px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--btn-port-color);
+  background-color: var(--accent-color);
 }
