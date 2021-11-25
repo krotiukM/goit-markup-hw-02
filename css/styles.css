@@ -86,7 +86,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-left: 50px;
+  margin-right: 30px;
   padding: 32px 0 32px 0;
 }
 
@@ -111,8 +111,24 @@ body {
 .header-nav:focus,
 .header-link:hover,
 .header-link:focus,
-.portfolio_main_section {
+.portfolio_main_section,
+.mailto-link:focus,
+.mailto-link:hover {
   color: var(--accent-color);
+}
+
+.mailto-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  margin-right: 10px;
+}
+
+.mailto-icon {
+  fill: currentColor;
 }
 
 /*----------------------------HERO----------------------------*/
@@ -206,7 +222,8 @@ body {
 }
 
 .title-about,
-.title-about-team {
+.title-about-team,
+.title-regular_customers {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -230,9 +247,28 @@ body {
 .about-item:last-child {
   margin-right: 0;
 }
+
+.middle-icon-link {
+  width: 270px;
+  height: 120px;
+  background: #ffffff;
+  display: flex;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  margin-bottom: 30px;
+}
 /*------------------------our_team_section---------------------------*/
 .our_team_section {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular_customers_section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -317,6 +353,41 @@ body {
   fill: white);
 }*/
 
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+}
+.customers-item + .customers-item {
+  margin-left: 30px;
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-link:focus,
+.customers-link:hover,
+.middle-icon-link:focus,
+.middle-icon-link:hover {
+  border: 3px solid #2196f3;
+}
 /*--------------------footer-----------------------*/
 .footer_section {
   background-color: #2f303a;
